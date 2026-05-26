@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valeria Brizzolari | Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════ -->
+    <nav id="navbar">
+      <div class="nav-logo">VB_</div>
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span>OPEN TO WORK</span>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-line"></span>
+          <span>FULL STACK DEVELOPER</span>
+        </div>
+        <h1 class="hero-name">
+          Valeria<br />
+          <span class="name-accent">Brizzolari</span>
+        </h1>
+        <p class="hero-tagline">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-bio">
+          Developer in training. Passionate about design, gaming, and building
+          things that actually feel good to use.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn-primary">VIEW MY WORK →</a>
+          <a href="#contact" class="btn-ghost">GET IN TOUCH</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <img
+          src="assets/images/me.png"
+          alt="Valeria Brizzolari"
+          class="hero-photo"
+        />
+        <div class="photo-border"></div>
+        <div class="photo-tag">@valeria.dev</div>
+      </div>
+
+      <!-- decorative background grid -->
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════════════ -->
+    <section id="about" class="section">
+      <div class="section-label">
+        <span class="tag-line"></span>01. ABOUT ME
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">
+            A bit about <span class="accent">me</span>
+          </h2>
+          <p>
+            I'm a self-taught developer currently working through a full stack
+            web development course, building projects with HTML, CSS,
+            JavaScript, Node.js, Express, and PostgreSQL. I enjoy creating
+            websites that feel clean, interactive, and enjoyable to use.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">35</span>
+            <span class="stat-label">Bootcamp sections<br />completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="project-count"></span>
+            <span class="stat-label">Projects<br />built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Hours in<br />Overwatch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         WORK / PROJECTS SECTION
+    ═══════════════════════════════════════ -->
+    <section id="work" class="section">
+      <div class="section-label"><span class="tag-line"></span>02. WORK</div>
+      <h2 class="section-title">
+        Things I've <span class="accent">built</span>
+      </h2>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <img
+            src="assets/images/daily-grove.PNG"
+            alt="Daily Grove"
+            class="project-img"
+          />
+          <div class="project-body">
+            <div class="project-number">01</div>
+            <h3 class="project-title">Daily Grove</h3>
+            <p class="project-desc">
+              A full-stack productivity app where users create profiles, manage
+              daily tasks, and track personal growth. Features dynamic user
+              pages, task organisation, and database relationships.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+              <span>EJS</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ValeriaBrizzolari/daily-grove.git"
+                target="_blank"
+                class="project-link"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://daily-grove.onrender.com/"
+                target="_blank"
+                class="project-link"
+                >Live ↗</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <img
+            src="assets/images/ow-hero-explorer.PNG"
+            alt="Overwatch Hero Explorer"
+            class="project-img"
+          />
+          <div class="project-body">
+            <div class="project-number">02</div>
+            <h3 class="project-title">Overwatch Hero Explorer</h3>
+            <p class="project-desc">
+              A dynamic web app that lets users browse Overwatch heroes in
+              detail — abilities, lore, and stats — using the Overfast API.
+              Styled after the game's own UI design.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>EJS</span>
+              <span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ValeriaBrizzolari/overwatch-hero-explorer.git"
+                target="_blank"
+                class="project-link"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://overwatch-hero-explorer.onrender.com/"
+                target="_blank"
+                class="project-link"
+                >Live ↗</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <img
+            src="assets/images/romantasy-blog.PNG"
+            alt="Romantasy Blog"
+            class="project-img"
+          />
+          <div class="project-body">
+            <div class="project-number">03</div>
+            <h3 class="project-title">Romantasy Blog</h3>
+            <p class="project-desc">
+              A fantasy-themed blog where users can browse series pages, create
+              posts, edit and delete content, and leave comments across
+              dynamically generated book worlds.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>EJS</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ValeriaBrizzolari/romantasy-blog.git"
+                target="_blank"
+                class="project-link"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://romantasy-blog.onrender.com/"
+                target="_blank"
+                class="project-link"
+                >Live ↗</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <img
+            src="assets/images/learn-play-italian-english.PNG"
+            alt="Learn and Play Italian English"
+            class="project-img"
+          />
+          <div class="project-body">
+            <div class="project-number">04</div>
+            <h3 class="project-title">Learn & Play Italian ↔ English</h3>
+            <p class="project-desc">
+              Interactive language learning site with multiple mini-games to
+              practise vocabulary in Italian and English. Features dynamic
+              language switching and responsive design.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ValeriaBrizzolari/Learn-and-Play-Italian-English.git"
+                target="_blank"
+                class="project-link"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://valeriabrizzolari.github.io/Learn-and-Play-Italian-English/"
+                target="_blank"
+                class="project-link"
+                >Live ↗</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <img
+            src="assets/images/snake-game.PNG"
+            alt="Snake Game"
+            class="project-img"
+          />
+          <div class="project-body">
+            <div class="project-number">05</div>
+            <h3 class="project-title">Snake Game</h3>
+            <p class="project-desc">
+              A retro-style Snake game with score tracking, sound effects,
+              increasing speed, and responsive touch controls for mobile
+              devices.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ValeriaBrizzolari/snake-game"
+                target="_blank"
+                class="project-link"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://valeriabrizzolari.github.io/snake-game/"
+                target="_blank"
+                class="project-link"
+                >Live ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SKILLS SECTION
+    ═══════════════════════════════════════ -->
+    <section id="skills" class="section">
+      <div class="section-label"><span class="tag-line"></span>03. SKILLS</div>
+      <h2 class="section-title">What I <span class="accent">know</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title">Frontend</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Design</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title">Backend</h4>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>EJS Templates</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title">Database</h4>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title">Tools</h4>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Command Line</li>
+            <li>npm</li>
+            <li>Render</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="section-label"><span class="tag-line"></span>04. CONTACT</div>
+      <h2 class="section-title">Let's <span class="accent">talk</span></h2>
+      <p class="contact-intro">
+        Whether you have a project in mind, a job opportunity, or just want to
+        say hi — my inbox is open.
+      </p>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xlgvpqlb"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="What's on your mind?"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-primary">SEND MESSAGE →</button>
+      </form>
+
+      <div class="social-links">
+        <a href="https://github.com/ValeriaBrizzolari" target="_blank"
+          >GitHub ↗</a
+        >
+        <a href="https://www.instagram.com/valeriabrizzolari/" target="_blank"
+          >Instagram ↗</a
+        >
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer>
+      <span>Designed & built by Valeria Brizzolari</span>
+      <span class="footer-accent">VB_ <span id="footer-year"></span></span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
