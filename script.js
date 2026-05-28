@@ -101,7 +101,9 @@ const observer = new IntersectionObserver(
   },
 );
 
-revealElements.forEach((el) => observer.observe(el));
+setTimeout(() => {
+  revealElements.forEach((el) => observer.observe(el));
+}, 100);
 
 // ═══════════════════════════════════════
 //  SMOOTH SCROLL for nav links
