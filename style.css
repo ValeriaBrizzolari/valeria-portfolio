@@ -336,7 +336,7 @@ img {
 }
 
 .hero-photo {
-  width: 320px;
+  width: 420px;
   height: auto;
   display: block;
 }
@@ -347,19 +347,10 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid var(--accent);
+  border: 0.1px solid var(--accent);
+  border-radius: 8px;
   z-index: 2;
   pointer-events: none;
-}
-
-.photo-tag {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--text-dim);
-  letter-spacing: 0.1em;
 }
 
 /* ═══════════════════════════════════════
